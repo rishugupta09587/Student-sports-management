@@ -1,0 +1,51 @@
+{
+  "name": "sports-staff-backend",
+  "version": "1.0.0",
+  "description": "Sports Staff Data Management System - Backend API",
+  "main": "dist/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "dev:local-db": "tsx dev-local.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "lint": "eslint \"src/**/*.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "cloudinary": "^2.5.1",
+    "compression": "^1.7.5",
+    "cors": "^2.8.5",
+    "csv-parse": "^5.6.0",
+    "csv-stringify": "^6.5.2",
+    "docx": "^9.1.0",
+    "docxtemplater": "^3.60.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "mongoose": "^8.9.5",
+    "morgan": "^1.10.0",
+    "multer": "^2.0.1",
+    "pizzip": "^3.1.7",
+    "streamifier": "^0.1.1",
+    "winston": "^3.17.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/compression": "^1.7.5",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/morgan": "^1.9.9",
+    "@types/multer": "^1.4.12",
+    "@types/node": "^22.10.5",
+    "@types/streamifier": "^0.1.2",
+    "eslint": "^9.19.0",
+    "mongodb-memory-server": "^11.2.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
